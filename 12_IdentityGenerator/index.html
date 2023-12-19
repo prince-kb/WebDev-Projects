@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="real">
+        <div id="inputSide">
+            <form action="/" id="forms">
+                <div id="image">
+                    <label for="photoUploader" id="imageLabel">Upload image</label>
+                    <input type="file" accept="image/gif, image/jpeg, image/png" name="Choose Picture" id="photoUploader">
+                    <!-- <input type="submit" value="submit">     -->
+                </div>
+                <form action="">
+                    
+                    <div id="all">
+                        <div class="f">
+                            <label for="name" id="nameLabel" class="g">Name</label>
+                            <input type="text" name="name" id="name" class="h">
+                            <input type="button" value="Submit" class="submitButton" onclick="funcname()">
+                        </div>
+                        <div class="f">
+                            <label for="number" id="numLabel" class="g">Phone number</label>
+                            <input type="number" name="number" id="number" class="h">
+                            <input type="button" value="Submit" class="submitButton" onclick="funcnumber()">
+                        </div>
+                        <div class="f">
+                            <label for="email" id="emailLabel" class="g">E-mail</label>
+                            <input type="email" name="email" id="email" class="h">
+                            <input type="button" value="Submit" class="submitButton" onclick="funcemail()">
+                        </div>
+                        <div class="f">
+                            <label for="password" id="passwordLabel" class="g">Desired password</label>
+                            <input type="password" name="password" id="password" class="h">
+                            <input type="button" value="Submit" class="submitButton" onclick="funcpassword()">
+                        </div>
+                        <div class="f">
+                            <label for="ID" id="IDLabel" class="g">Date of joining</label>
+                            <input type="date" name="ID" id="ID" class="h">
+                            <input type="button" value="Submit" class="submitButton" onclick="funcID()">
+                        </div>
+                </form>
+                </div>
+        </div>
+        <div id="midline"></div>
+        <div id="outputSide">
+            <button id="dl"><img src="sm.jpg" alt="D" id="logo" onclick="changecolor()"></button>
+            <div id="card">
+            <div id="imagePlace">
+                <img src="p.png" alt="Image unavailable" id="profilepic">
+            </div>
+            <div id="namePlace" class="Place"></div>
+            <div id="numberPlace" class="Place"></div>
+            <div id="emailPlace" class="Place"></div>
+            <div id="passwordPlace" class="Place"></div>
+            <div id="IDPlace" class="Place"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    display: grid;
+    place-content: center;
+}
+
+
+
+#wrapper{
+    display: flex;
+    min-height: 80vh;
+    width: 100vw;
+    background: rgb(236, 242, 60);
+    flex-wrap: wrap;
+}
+.note{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 255px;
+    width: 210px;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    margin:auto;
+}
+#buttons{
+    display: inline-block;
+    align-content: space-around;
+}
+.n{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 225px;
+    width: 200px;
+    border: 3px solid rgb(0, 60, 255);
+    border-radius: 20px;
+    margin:auto;
+}
+#note1{
+visibility: hidden;    
+}
+
+.edit,.del{
+    border: 3px solid red;
+    border-radius: 25px;
+}
+.edit:hover,.del:hover{
+    border: 3px dashed rgb(0, 72, 255);
+    border-radius: 25px;
+}
+
+#edit{
+    margin: auto;
+    /* margin-left: 10px; */
+}
+/* #del{
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 50px;
+
+} */
+
+#add{
+    margin: auto;
+    height: 75px;
+    width: 150px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 0, 0);
+    color:rgb(17, 0, 255) ;
+    font-size: 20px;
+    font-family: 'Cavolini';
+    font-weight: 1000;
+    border: 5px dashed #000;
+    border-radius: 20px;
+}

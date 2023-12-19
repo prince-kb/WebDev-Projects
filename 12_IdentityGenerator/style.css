@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --b:black;
+    --w:white;
+}
+#container{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: space-around;
+background-color: var(--w);
+}
+
+/* BASE */
+#inputSide{
+    height: 100vh;
+    width: 55vw;
+    background-color: var(--b);    
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#midline{
+    height: 100vh;
+    width: 2vw;
+    background-color: #3E001F;
+}
+#outputSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 42vw;
+    background-color: var(--b);
+    border-radius: 50px;
+    min-width: max-content;
+}
+
+/* SIDE1 */
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 25%;
+    background-color: chocolate;
+    border-radius: 20px;
+}
+#imageLabel{
+    height: 5vh;
+    min-width:min-content;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--w);
+    border-radius: 5px;
+    background-color: red;
+    border: 3px solid var(--w);
+    transition: all 0.3s 0s ease;
+}
+#imageLabel:hover{
+    background-color: var(--w);
+    border: 3px solid red;
+    color: red;
+    font-weight: 800;
+}
+
+#photoUploader{
+    display: none;
+}
+#all{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 20px; */
+    /* background-color: aqua; */
+    /* overflow: auto; */
+}
+.f{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+#forms{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h{
+    margin-left: 10px;
+    border: none;
+    border-bottom: 4px solid rgb(247, 4, 231);
+    border-right: 4px solid rgb(247, 4, 231);
+    min-height: 35px;
+    min-width: 10px;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.355);
+
+}
+.h:hover{
+    border-bottom: 4px solid red;
+    border-right: 4px solid red;
+}
+.g{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    font-family: 'Cavolini';
+    color:rgb(6, 23, 86);
+    font-weight: 800;
+    margin-right: 10px;
+    text-align: center;
+    border: 2px solid var(--w);
+    border-radius: 10px;
+    width: 22%;
+    min-width: min-content;
+    background-color: rgb(247, 4, 231);
+    padding: 3px;
+    box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.355);
+}
+
+/* SIDE2 */
+.submitButton{
+    margin: 10px;
+    height: 30px;
+    min-width: min-content;
+    width: 10%;
+    color: white;
+    background-color: #982176;
+    border: 2px solid var(--w);
+    border-radius: 10px;
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.submitButton:hover{
+    transform:translateY(-5px);
+    transform: scale(1.2);
+}
+#imagePlace{
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#profilepic{
+    height: 275px;
+    /* aspect-ratio: 1; */
+    border-radius: 100%;
+    width: auto;
+    transition: all 0.3s 0s ease;
+}
+
+
+#inputName{
+    font-size: 2em;
+    font-family: 'Cavolini';
+    font-weight: 1000;
+    color: var(--b);
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.5s 0s ease;
+}
+
+#namePlace{
+    transition: all 0.5s 0s ease;
+}
+
+.a{
+    color: var(--b);
+    font-size: 1.4em;
+    margin:10px;
+    padding: 10px;
+    border: 2px solid var(--b);
+    transition: all 0.3s 0s ease;
+    border-radius: 10px;
+}
+.a:hover{
+    transform: scale(1.2);
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85%;
+    min-width: 70%;
+    width: min-content;
+    border-radius: 80px;
+    background-color: var(--w);
+}
+#hidden{
+    color: var(--b);
+    font-size: 1.4em;
+    margin:10px;
+    padding: 10px;
+    border: 2px solid var(--b);
+    transition: all 0.3s 0s ease;
+    border-radius: 10px;
+    transition: all 0.3s 0s ease;
+}
+
+#passwordPlace{
+    transition:all 0.3s 0s ease;
+}
+
+@media screen and (max-width:1000px){
+    #profilepic{
+        height: 150px;
+    }
+    #profilepic:hover{
+        transform: scale(1.5);
+    }
+    #all{
+        gap: 2px;
+    }
+}
+@media screen and (max-width:700px){
+    #container{
+        flex-direction:column;
+    }
+    #inputSide{
+        height: 55vh;
+        width: 100vw;
+        min-width: fit-content;
+    }
+    #outputSide{
+        min-height: max-content;
+        /* height: 42vh; */
+        border-radius: 25px;
+        width: 100vw;
+        min-width: fit-content;
+    }
+    #midline{
+        width: 100vw;
+        height: 2vh;
+    }
+    #imagePlace{
+        height: 20%;
+        margin: 5px;
+        padding: 5px;
+    }
+    #profilepic{
+        height: 100px;
+        margin: 5px;
+    }
+    #inputName{
+        margin: 5px;
+        padding: 5px;
+    }
+    #namePlace{
+        margin: 5px;
+    }
+    #profilepic:hover{
+        transform: scale(2);
+    }
+    .a{
+        margin: 3px;
+        padding: 3px;
+        font-size: 1em;
+    }
+    #all{
+        gap: 2px;
+    }
+    #inputName:hover{
+        transform: scale(1.5);
+    }
+    .h{
+        margin-left: 4px;
+        border-bottom: 2px solid rgb(247, 4, 231);
+        border-right: 2px solid rgb(247, 4, 231);
+        min-height: 20px;
+        min-width: 8px;
+        width: 30%;
+    
+    }
+    .h:hover{
+        border-bottom: 2px solid red;
+        border-right: 2px solid red;
+    }
+    .g{
+        font-size: 0.7em;
+        min-height: 10px;
+        font-family: 'Cavolini';
+        margin-right: 2px;
+        width: 25%;
+        min-width: min-content;
+        padding: 1px;
+        box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.355);
+    }
+    #image{
+        width: 60%;
+        height: 18%;
+    }
+    #imageLabel{
+        font-size: 0.7em;
+        height: 4vh;
+        min-width:min-content;
+        min-height: max-content;
+        width: 6vw;
+        border: 2px solid var(--w);
+    }
+    #imageLabel:hover{
+        border: 2px solid red;
+    }
+    .submitButton{
+        margin: 2px;
+        font-size: 0.6em;
+        height: 15px;
+    }
+}
+#dl{
+position: absolute;
+top:15px;
+right: 15px;
+width: max-content;
+height: auto;
+background-color: #98217600;
+box-shadow: none;
+}
+
+#logo{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
