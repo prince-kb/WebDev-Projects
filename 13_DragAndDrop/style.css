@@ -1,0 +1,42 @@
+/* 
+<div class="container">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</div> 
+*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+height: 80vh;
+width: 80vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+gap: 10vh;
+border-radius: 12px;
+}
+.box{
+    /* margin: 2vh; */
+    height: 30vh;
+    width: 30vh;
+    border: 5px solid black;
+    display: flex;
+    border-radius: 12px;
+}
+.box .image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("pngwing.com.png");
+    
+}
