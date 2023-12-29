@@ -26,11 +26,12 @@ border-radius: 12px;
     border-radius: 12px;
 }
 .box .image{
+    transition: all 0s 0.2s ease;
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url("Programming-Approach.jpg");
+    background-image: url("pngwing.com.png");
     
 }
 .box.hovered{
