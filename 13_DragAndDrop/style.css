@@ -1,11 +1,4 @@
-/* 
-<div class="container">
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-</div> 
-*/
+
 body{
     height: 100vh;
     display: flex;
@@ -24,7 +17,7 @@ align-items: center;
 gap: 10vh;
 border-radius: 12px;
 }
-.box{
+.box{ 
     /* margin: 2vh; */
     height: 30vh;
     width: 30vh;
@@ -37,6 +30,9 @@ border-radius: 12px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url("pngwing.com.png");
+    background-image: url("Programming-Approach.jpg");
     
+}
+.box.hovered{
+    border: 5px dashed red;
 }
