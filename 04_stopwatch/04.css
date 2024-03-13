@@ -7,21 +7,22 @@ body{
 
   
 #all{
+
     height: 500px;
     width: 500px;
     background-color: rgb(52, 217, 217);
     border: 8px solid rgb(255, 255, 255);
-    border-radius: 5%;
+    border-radius: 10px;
     display: grid;
     place-content: center;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 #min ,#sec ,#milli{
 background: rgb(215, 61, 61);
 height: 60px;
 width: 144px;
 border: 3px solid yellow;
-border-radius: 10%;
+border-radius: 12px;
 margin: 10px;
 display: grid;
 place-content: center;
@@ -45,23 +46,23 @@ font-size: 60px;
     align-items: center;
     margin-bottom: 180px;
     color: white;
-    border-radius: 10%;
+    border-radius: 10px;
     
 }
 #buttons{
     background-color: rgb(209, 72, 175);
     display: flex;
-
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 100%;
     border: 3px solid ;
     box-sizing: border-box;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
-#start,#reset{
+.s{
+    transition: all;
     background-color: red;
     font-size: 18px;
     font-weight: 700;
@@ -70,9 +71,33 @@ font-size: 60px;
     margin: 5px;
     padding: 5px;
     box-shadow: 2px 2px 4px rgb(43, 2, 2);
+    transition: all 0.1s 0s ease-in-out;
+}
+.s:hover{
+    background-color:chocolate;
+    transform: scale(1.2);
+    margin: 10px;
+    
 }
 
-#start,#reset,#sec,#min,#milli{
-    transition:all 0s 0.5s ease;
+#sec,#min,#milli{
+    
+    transition: all 0.2s 0s ease-in-out;
 }
 
+.card{
+    position : relative;
+    background: blue;
+    height: 200px;
+    width: 200px;
+}
+
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: yellow;
+    height: 50px;
+    width: 50px;
+}
