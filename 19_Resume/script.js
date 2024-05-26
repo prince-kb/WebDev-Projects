@@ -2,7 +2,7 @@ const details =  document.querySelector('.details');
 const resume = document.querySelector('.resume');
 const border = document.querySelector('.border');
 window.onload = () => {
-x();
+    x();
 }
 window.addEventListener('resize', () => {
     x();
