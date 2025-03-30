@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle Cursor</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <script>
+      let body = document.querySelector("body");
+      function createParticle(x, y) {
+        let p = document.createElement("div");
+        p.classList.add("p");
+
+        p.style.left = `${x}px`;
+        p.style.top = `${y}px`;
+
+        let moveX = (Math.random() - 0.5) * 400;
+        let moveY = (Math.random() - 0.5) * 400;
+
+        p.style.setProperty("--move-x", `${moveX}px`);
+        p.style.setProperty("--move-y", `${moveY}px`);
+
+        let size = Math.random() * 6 + 2;
+        p.style.width = `${size}px`;
+        p.style.height = `${size}px`;
+
+        let duration = Math.random() * 3 + 2;
+        p.style.animationDuration = `${duration}s`;
+        body.appendChild(p);
+        setTimeout(() => p.remove(), duration * 200);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        createParticle(e.clientX, e.clientY);
+      });
+    </script>
+  </body>
+</html>
